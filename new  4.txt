@@ -1,0 +1,51 @@
+function init_archive_pages_admin()
+{
+	echo '<script type="text/javascript" src="'.plugins_url('/js/jquery-1.8.3.min.js', __FILE__).'"></script>';
+	echo '<style>
+			#archivePageList{
+				z-index:10000;
+				margin:10px 10px;
+			}
+			#archivePageList .archivePage{
+				padding:1%;
+				margin-bottom:10px;
+				background:#FFF;
+				border:solid 1px #D4D4D4;
+				vertical-align:top;
+				cursor:pointer;
+			}
+			#archivePageList.gridview .archivePage{
+				display:inline-block;
+				width:22%;
+				height:100px;
+				margin-right:2%;
+			}
+			
+			#archivePageList.listview .archivePage{
+				display:block;
+				width:100%;
+				padding:1%;
+			}
+			#archivePageList .archivePage .pageTitle{
+				display:block;
+			}
+			#archivePageList .archivePage .pageDescription{
+				display:none;
+				max-height:50px;
+				overflow:hidden;
+			}
+			</style>
+			<script type="text/javascript">
+			jQuery(document).ready(function(){
+				jQuery("#archivePageList .archivePage").hover(function(){
+					//jQuery(this).find(".pageTitle").hide();
+					jQuery(this).find(".pageDescription").show();
+				},function(){
+					jQuery(this).find(".pageDescription").hide();
+					//jQuery(this).find(".pageTitle").show();
+				});
+				jQuery("#archivePageList .archivePage").on("click",function(){
+					window.open($(this).attr("data-href"));
+				});
+			});
+			</script>';

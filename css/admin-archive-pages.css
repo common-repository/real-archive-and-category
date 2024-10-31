@@ -1,0 +1,70 @@
+#jb-create-archive-style{
+	float:right;
+	margin-bottom:5px;
+}
+.archivepages_local_style_dialog{
+	display:none;
+	position: fixed;
+	margin: 0 auto;
+	left: 0px;
+	right: 0px;
+	width: 595px;
+	background-color: whitesmoke;
+	padding: 5px;
+	top: 30%;
+	margin-top: -100px;
+	border: 1px solid darkgrey;
+	border-radius: 5px;
+	z-index: 99;
+}
+.colorpicker{
+	z-index:100;
+}
+.archivepages_local_style_dialog a.tab{
+	display:inline-block;
+	padding:2px 5px 2px 0px;
+	vertical-align:top;
+}
+.archivepages_local_style_dialog a.tab.selected{
+	color:#0CF;
+	font-weight:bold;
+}
+.archivepages_local_style_dialog table{
+	display:none;
+}
+.archivepages_local_style_dialog table tr td{
+	padding:5px 0px;
+}
+.archivepages_local_style_dialog table.selected{
+	display:block;
+}
+
+.save-archivepages-style{
+	margin:5px 0px !important;
+}
+
+.mtable{
+	display:table;
+	width:100%;
+	border:solid 1px #D4D4D4;
+}
+.mtable .mrow{
+	display:table-row;
+}
+.mtable .mrow.mhead{
+	display:table-row;
+	background:#D5D5D5;
+}
+.mtable .mrow.line1{
+	background: #D3D3D3;
+}
+.mtable .mrow.line2{
+	background: #F5F5F5;
+}
+.mtable .mrow .mcol{
+	display:table-cell;
+	padding:5px;
+}
+input.smallInputText{
+	width:80px;
+}
